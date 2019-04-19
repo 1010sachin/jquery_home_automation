@@ -1,5 +1,5 @@
 # jquery_home_automation
-A simple jquery application for implementing home automation by means for a centralized control panel. Currently, the 
+A simple jquery application for implementing home automation by means of a centralized control panel. Currently, the 
 application is designed for a single bed/bath apartment, with controllable components like lights, temperature and curtains. 
 However, the application can be easily extended to add more rooms and components. In order to add more components, modify
 the [json file](data/settings.json) by providing the details of the new component as per following structure:
