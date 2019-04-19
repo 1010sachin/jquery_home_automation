@@ -1,0 +1,102 @@
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  .cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+  input.cmn-toggle-round + label {
+    padding: 2px;
+    width: 65px;
+    height: 25px;
+    background-color: #dddddd;
+    border-radius: 30px;
+  }
+  input.cmn-toggle-round + label:before,
+  input.cmn-toggle-round + label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+  }
+  input.cmn-toggle-round + label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    transition: background 0.4s;
+  }
+  input.cmn-toggle-round + label:after {
+    width: 35px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.4s;
+  }
+  input.cmn-toggle-round:checked + label:before {
+    background-color: #8ce196;
+  }
+  input.cmn-toggle-round:checked + label:after {
+    margin-left: 35px;
+  }
+
+  .toggle-block{
+    
+   padding-right: 5px;
+  }
+
+  .container, .header, .block, div.toggle-block, .footer{
+    float:left;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  div.block h3{
+
+    padding:0px 0 2px 5px;
+    font-family: 'Parisienne', serif;
+    font-size: 15px;
+  }
+
+.control, .model{
+  float: left;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  background-color: ##F1EBEA;
+}
+
+.control{
+  padding: 0px 2px 0px 2px;
+  height: 672px;
+}
+div.switch,.visual {float:left;}
+
+div.toggle-block span {
+  padding: 0px 0px 2px 10px;
+  float:left;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+
+#homedisplay{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 15;
+  font-family: 'Parisienne', serif;
+  font-size: 20px
+}
+
+.curtains{
+  box-shadow: 5px 10px #A09997;
+ 
+}
+.lights{
+  background-color: #F0F586;
+}

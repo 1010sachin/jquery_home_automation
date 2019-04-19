@@ -1,0 +1,68 @@
+{
+    "temperature":  {
+
+        "label":"Temperature",
+        "edit": {
+                "val":"70",
+                "type":"number"
+        },
+
+        "central":true
+    }
+    ,
+
+    "living": {
+        "label":"Living Room",
+        "curtains":{
+                "label" : "Curtains",
+                "type":"checkbox",
+                "val": true
+            },
+        "lights" : {
+                "label" : "Lights",
+                "type":"checkbox",
+                "val": true
+            }
+    }
+    ,"bedroom": {
+        "label":"Bedroom",
+        "curtains": {
+                "label" : "Curtains",
+                "type":"checkbox",
+                "val": true
+            },
+        "lights" : {
+                "label" : "Lights",
+                "type":"checkbox",
+                "val": false
+            }
+    }
+
+    ,"bathroom": {
+        "label":"Bathroom",
+        "curtains": {
+                "label" : "Curtains",
+                "type":"checkbox",
+                "val": false
+            },
+        "lights" : {
+                "label" : "Lights",
+                "type":"checkbox",
+                "val": false
+            }
+    }
+
+    ,"kitchen": {
+        "label":"Kitchen",
+        "curtains": {
+                "label" : "Curtains",
+                "type":"checkbox",
+                "val": true
+            },
+        "lights" : {
+                "label" : "Lights",
+                "type":"checkbox",
+                "val": false
+            }
+    }
+}
