@@ -3,8 +3,9 @@ A simple jquery application for implementing home automation by means for a cent
 application is designed for a single bed/bath apartment, with controllable components like lights, temperature and curtains. 
 However, the application can be easily extended to add more rooms and components. In order to add more components, modify
 the [json file](data/settings.json) by providing the details of the new component as per following structure:
+
+For instance, consider there is already a living room, defined in the JSON as follows:
 ```
-//Adding a TV in the living room 
  "living":{
         "label":"Living Room",
         "curtains":{
@@ -16,14 +17,31 @@ the [json file](data/settings.json) by providing the details of the new componen
                 "label" : "Lights",
                 "type":"checkbox",
                 "val": true
-            },
-         "TV" : {
-                "label" : "TV",
-                 "type":"checkbox",
-                  "val": true
             }
     }
 ```
+
+Now, in order to add a new component, say a TV in the living room, append the following structure to the above 
+[json file](data/settings.json) as:
+
+Here the value is a boolean parameter and assigned 'true', which indicates that when the app loads the default value 
+for the component is 'true' i.e 'on'. You can assign it a value as a 'false' to default the component in 'off' condition.
+
+```
+"TV" : {
+                "label" : "TV",
+                "type":"checkbox",
+                "val": true
+            }
+```
+And, append the following to the [css file](css/main.css) as:
+```
+.TV{
+     background-color:red;
+   }
+```
+
+In the above code, the background color is the color given when the 'on/off' switch is triggered. 
 
 The added component will be dynamically added to the control panel. Currently the only supported operation is on/off, 
 by the means of the checkbox for the components, except for temperature which supports a number as value. 
