@@ -24,9 +24,6 @@ For instance, consider there is already a living room, defined in the JSON as fo
 Now, in order to add a new component, say a TV in the living room, append the following structure to the above 
 [json file](data/settings.json) as:
 
-Here the value is a boolean parameter and assigned 'true', which indicates that when the app loads the default value 
-for the component is 'true' i.e 'on'. You can assign it a value as a 'false' to default the component in 'off' condition.
-
 ```
 "TV" : {
                 "label" : "TV",
@@ -34,6 +31,11 @@ for the component is 'true' i.e 'on'. You can assign it a value as a 'false' to 
                 "val": true
             }
 ```
+
+Here the value is a boolean parameter and assigned 'true', which indicates that when the app loads the default value 
+for the component is 'true' i.e 'on'. You can assign it a value as a 'false' to default the component in 'off' condition.
+
+
 And, append the following to the [css file](css/main.css) as:
 ```
 .TV{
@@ -44,7 +46,11 @@ And, append the following to the [css file](css/main.css) as:
 In the above code, the background color is the color given when the 'on/off' switch is triggered. 
 
 The added component will be dynamically added to the control panel. Currently the only supported operation is on/off, 
-by the means of the checkbox for the components, except for temperature which supports a number as value. 
+by the means of the checkbox for the components, except for temperature which supports a number as value.
+
+Another feature is the ability to add a component which is central to the house. For eg, the 'temperature' component in the 
+[json file](data/settings.json) has a key 'central' which is set to a value 'true'. This indicates, that this component 
+will be centrally controlled and affects the entire house.
 
 ### Pre-requisites.
 In order to run the applications you will need the below tools:
